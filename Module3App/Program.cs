@@ -5,16 +5,16 @@ class MainClass
     public static void Main(string[] args)
     {
 
-        string myName;
-        myName = "Anne";
-        
-        Console.WriteLine(myName);
-        Console.WriteLine("\tПривет, мир!");
-        Console.WriteLine("\tМне 21 год");
-        Console.WriteLine("\tMy name is\nAnne");
-        Console.WriteLine('\u0040');
-        Console.WriteLine('\x23');
-        Console.ReadKey();
-        
+        string MyName = "Nikita";
+        byte MyAge = 27;
+        bool HaveIPet = true;
+        double MyShoeSize = 43;
+
+        Console.WriteLine("My name is " + MyName);
+        Console.WriteLine("My age " + MyAge);
+        Console.WriteLine("Do I have a pet? " + HaveIPet);
+        Console.WriteLine("My shoe size is " + MyShoeSize);
+
+
     }
 }
