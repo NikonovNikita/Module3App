@@ -4,30 +4,18 @@ class MainClass
 {
     public static void Main(string[] args)
     {
-
-        string MyName = "Nikita";
-        byte MyAge = 27;
-        bool HaveIPet = true;
-        double MyShoeSize = 43;
-
-        Console.WriteLine("My name is " + MyName);
-        Console.WriteLine("My age " + MyAge);
-        Console.WriteLine("Do I have a pet? " + HaveIPet);
-        Console.WriteLine("My shoe size is " + MyShoeSize);
-
-        double result = 10 % 3;
-        Console.WriteLine(result);
-
-        Console.Write("What is your name? ");
+        Console.WriteLine("Здравствуйте! Это финальная практика модуля. Анкета");
+        Console.Write("Как вас зовут? ");
         var name = Console.ReadLine();
-        Console.Write("What is your age? ");
-        var age = checked((byte) int.Parse(Console.ReadLine()));
-        Console.WriteLine("Your name is {0} and age is {1}", name, age);
+        Console.Write("Сколько вам лет? ");
+        var age = byte.Parse(Console.ReadLine());
+        Console.Write("Назовите свою дату рождения ");
+        var birthdate = Console.ReadLine();
+        Console.WriteLine("Спасибо за ваши ответы. Теперь мы знаем, что вас зовут {0}, " +
+            "вам {1} лет, а ваша дата рождения {2}", name, age, birthdate);
 
-        Console.Write("What is your favourite day of week? ");
 
-        var day = (DaysOfWeek) int.Parse(Console.ReadLine());
-        Console.WriteLine("Your favourite day of week is {0}", day);
+
     }
 }
 enum DaysOfWeek : byte
